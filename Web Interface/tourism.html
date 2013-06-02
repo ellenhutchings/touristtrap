@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&sensor=false"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/accomodation.js" type="text/javascript"></script>
+<script src="js/maps.js" type="text/javascript"></script>
+<script src="js/attractions.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	state = getParams();
+	readyMap(state);
+	initialize();
+	mapRegion();
+});
+
+function getParams() {
+
+  var params = window.location.search.substring(1).split('& '),
+    i = 0,
+    pair = null,
+    result = {};
+
+  while (pair = params[i++]) {
+    pair = pair.split('=');
+    result[pair[0]] = decodeURIComponent(pair[1]);
+  }
+
+  return result;
+}
+
+function regionChange(){
+	populateAreas();
+	changeLocation($("#stateRegions :selected").text());
+}
+
+function areaChange(){
+	changeLocation($("#stateAreas :selected").text());
+}
+
+function lonely(){
+	emptiestRegion();
+	regionChange();
+}
+
+function attract(){
+	region = $("#stateRegions :selected").text();
+	apiCall(region);
+}
+</script>
+
+<title>Go Somewhere Special</title>
+<link href="tourist.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Holidays in <span id="state1"></span></h1>
+<p><em>Get away from the rat race.</em></p>
+<div id="display">
+<form>
+<label for="stateRegions">Regions of <span id="state2"></span>:</label><select id="stateRegions" onchange="regionChange()">
+</select>
+<label for="stateAreas">Areas of <span id="state3"></span>:</label><select id="stateAreas" onchange="areaChange()">
+</select>
+
+<div id="map" style="width:100%; height:400px;"></div>
+
+<input type="button" name="attractions" id="attractions" value="Local Attractions" onclick="attract()">
+<label for="getaway"><input type="button" name="lowest" id="lowest" value="I Want To Break Free" onclick="lonely()"/></label>
+</form>
+</div>
+<footer>Locality information from the <a href="http://www.abs.gov.au/">ABS</a>. 
+Tourist attractions data from <a href="http://www.atdw.com.au/">ATDW</a>.</footer>
+</body>
+</html>

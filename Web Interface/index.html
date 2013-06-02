@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&sensor=false"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/accomodation.js" type="text/javascript"></script>
+<script src="js/maps.js" type="text/javascript"></script>
+<script src="js/attractions.js" type="text/javascript"></script>
+<title>Tourism Australia!</title>
+<link href="tourist.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+</style>
+</head>
+
+<body onload="readyStates()">
+<h1>See Australia!</h1>
+
+
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style2"><a href="DSC01838.JPG">
+<img alt="Sunrise on Eyre Peninsula" class="imageBorder centre" height="150" src="DSC01838_small.JPG" width="200" xthumbnail-orig-image="DSC01838.JPG"></a></td>
+		<td class="auto-style2"><a href="DSC02295.JPG">
+		<img alt="Port Hughes Jetty" class="centre imageBorder" height="150" src="DSC02295_small.JPG" width="200" xthumbnail-orig-image="DSC02295.JPG"></a></td>
+	</tr>
+</table>
+<form action="tourism.html" method="get" name="form1">
+	<label for="states">Visit:</label> <select name="states" id="states"></select>
+<br/>
+<label for="visit"><input type="submit" id="visit" value="Explore"/></label>
+</form>
+<footer>Locality information from the <a href="http://www.abs.gov.au/">ABS</a>. 
+Tourist attractions data from <a href="http://www.atdw.com.au/">ATDW</a>.</footer>
+</body>
+
+</html>

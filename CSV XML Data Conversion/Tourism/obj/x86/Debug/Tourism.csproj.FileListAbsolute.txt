@@ -1,0 +1,9 @@
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\bin\Debug\Tourism.exe
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\bin\Debug\Tourism.pdb
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\obj\x86\Debug\Tourism.Properties.Resources.resources
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\obj\x86\Debug\Tourism.csproj.GenerateResource.Cache
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\obj\x86\Debug\Tourism.exe
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\obj\x86\Debug\Tourism.pdb
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\obj\x86\Debug\Tourism.Form1.resources
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\obj\x86\Debug\Tourism.Csv_Resources.ExceptionMessage.resources
+C:\Users\Ellen\Documents\Visual Studio 2010\Projects\Tourism\Tourism\obj\x86\Debug\Tourism.csprojResolveAssemblyReference.cache

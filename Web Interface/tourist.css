@@ -1,0 +1,13 @@
+﻿body {
+	font-family: calibri, Arial, sans-serif, Helvetica;
+}
+footer {
+	font-style:italic;
+}
+.imageBorder {
+	border-style: solid;
+	border-width: 1px;
+}
+.centre {
+	text-align: center;
+}
